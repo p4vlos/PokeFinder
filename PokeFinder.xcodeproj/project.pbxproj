@@ -12,6 +12,7 @@
 		3E559C2A1D6DD7CF00C898BF /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E559C231D6DD7CF00C898BF /* GFGeoHash.m */; };
 		3E559C2B1D6DD7CF00C898BF /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E559C251D6DD7CF00C898BF /* GFGeoHashQuery.m */; };
 		3E559C2C1D6DD7CF00C898BF /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E559C271D6DD7CF00C898BF /* GFQuery.m */; };
+		3E559C371D6DDEB300C898BF /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E559C361D6DDEB300C898BF /* PokeAnnotation.swift */; };
 		3E9DB5B71D6D84D200E66FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9DB5B61D6D84D200E66FF7 /* AppDelegate.swift */; };
 		3E9DB5B91D6D84D200E66FF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9DB5B81D6D84D200E66FF7 /* ViewController.swift */; };
 		3E9DB5BC1D6D84D200E66FF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9DB5BA1D6D84D200E66FF7 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		3E559C261D6DD7CF00C898BF /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		3E559C271D6DD7CF00C898BF /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		3E559C331D6DD8C900C898BF /* PokeFinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E559C361D6DDEB300C898BF /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		3E9DB5B31D6D84D200E66FF7 /* PokeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9DB5B61D6D84D200E66FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E9DB5B81D6D84D200E66FF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
@@ -101,6 +103,22 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		3E559C341D6DDE8300C898BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E9DB5B81D6D84D200E66FF7 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3E559C351D6DDE8900C898BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E559C361D6DDEB300C898BF /* PokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3E9DB5AA1D6D84D100E66FF7 = {
 			isa = PBXGroup;
 			children = (
@@ -122,15 +140,16 @@
 		3E9DB5B51D6D84D200E66FF7 /* PokeFinder */ = {
 			isa = PBXGroup;
 			children = (
-				3E9DB5B61D6D84D200E66FF7 /* AppDelegate.swift */,
-				3E9DB5B81D6D84D200E66FF7 /* ViewController.swift */,
-				3E9DB5BA1D6D84D200E66FF7 /* Main.storyboard */,
+				3E559C351D6DDE8900C898BF /* Model */,
+				3E559C341D6DDE8300C898BF /* Controller */,
 				3E559C161D6DD7CF00C898BF /* GeoFire */,
+				3E9DB5B61D6D84D200E66FF7 /* AppDelegate.swift */,
+				3E559C331D6DD8C900C898BF /* PokeFinder-Bridging-Header.h */,
+				3E9DB5BA1D6D84D200E66FF7 /* Main.storyboard */,
 				3E9DB5BD1D6D84D200E66FF7 /* Assets.xcassets */,
 				3E9DB5BF1D6D84D200E66FF7 /* LaunchScreen.storyboard */,
 				3E9DB5C21D6D84D200E66FF7 /* Info.plist */,
 				3E9DB5C81D6DCB0700E66FF7 /* GoogleService-Info.plist */,
-				3E559C331D6DD8C900C898BF /* PokeFinder-Bridging-Header.h */,
 			);
 			path = PokeFinder;
 			sourceTree = "<group>";
@@ -278,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E559C291D6DD7CF00C898BF /* GFBase32Utils.m in Sources */,
+				3E559C371D6DDEB300C898BF /* PokeAnnotation.swift in Sources */,
 				3E9DB5B91D6D84D200E66FF7 /* ViewController.swift in Sources */,
 				3E559C2A1D6DD7CF00C898BF /* GFGeoHash.m in Sources */,
 				3E9DB5B71D6D84D200E66FF7 /* AppDelegate.swift in Sources */,
