@@ -77,7 +77,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "User")
             annotationView?.image = UIImage(named: "ash")
         } else if let deqAnno = mapView.dequeueReusableAnnotationView(withIdentifier: annoIdentifier){
-            
             annotationView = deqAnno
             annotationView?.annotation = annotation
         } else {
